@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css?v=2">
+    <link rel="preload" href="./fonts/oswald-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/oswald-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/oswald-variablefont_wght.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/oswald-light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/oswald-medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" type="image/x-icon" href="./img/logo vector footer.png">
+    <title>Nevra Systems</title>
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+
+    <div class="navbar" id="home">
+        <div class="trigger-zone"></div>
+        <div class="header">
+            <a href="#home" class="nav-btn">Home</a>
+            <a href="#produto" class="nav-btn">Produto</a>
+            <a href="#footer" class="nav-btn">Contato</a>
+        </div>
+
+        <!-- Main Section -->
+
+        <div class="center">
+            <img class="logo" src="./img/logo vector.png" alt="Logo-Nevra-Systems">
+
+            <h1>Transforme seu negócio em uma máquina de vendas automática com <span class="gradient-text">Site +
+                    IA</span></h1>
+
+            <p class="sub">
+                Com presença digital, atendendo clientes 24h, capturando leads e fechando vendas sem depender de
+                atendimento manual.
+            </p>
+
+            <div class="section" id="produto">
+                <picture>
+                    <source media="(max-width: 1100px)" srcset="./img/section1ALT.png" class="alt1">
+                    <img src="./img/section1.png" alt="section1" class="section1">
+                </picture>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="pagina-produto">>
+                <picture>
+                    <source media="(max-width: 1100px)" srcset="./img/section2ALT.png" class="alt2">
+                    <img src="./img/section2.png" alt="section2" class="section2">
+                </picture>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section">
+                <picture>
+                    <source media="(max-width: 1100px)" srcset="./img/section3ALT.png" class="alt3">
+                    <img src="./img/section3.png" alt="section3" class="section3">
+                </picture>
+            </div>
+        </div>
+
+        <div class="section">
+            <div>
+                <picture>
+                    <source media="(max-width: 1100px)" srcset="./img/section4ALT.png" class="alt4">
+                    <img src="./img/section4.png" alt="section4" class="section4">
+                </picture>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+
+        <div class="section">
+            <div class="CTA">
+                <picture>
+                    <source media="(max-width: 1100px)" srcset="./img/section5ALT.png" class="alt5">
+                    <img src="./img/section5.png" alt="section5" class="section5">
+                </picture>
+            </div>
+        </div>
+
+        <div class="cta-wrapper">
+            <a href="https://wa.me/+5548988017617" target="_blank" rel="noopener noreferrer" class="cta-link"
+                aria-label="Abrir WhatsApp">
+                <picture>
+                    <source media="(max-width: 1100px)" srcset="./img/CTAALT.png">
+                    <img src="./img/CTA.png" alt="cta" class="cta-button">
+                </picture>
+            </a>
+        </div>
+    </div>
+
+    <!-- Logo Footer Section -->
+
+    <div class="center">
+        <img class="logo-footer" src="./img/logo vector footer.png" alt="Logo-Nevra-Systems-Footer">
+    </div>
+
+    <!-- Form Section -->
+
+    <form id="contact-form" action="https://formsubmit.co/nevralabs@outlook.com" method="POST">
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="text" name="Nome" placeholder="Seu Nome Completo" required />
+        <input type="tel" name="Telefone" pattern="[\d\s\+\-\(\)]{8,15}" placeholder="Seu Telefone (DDD 99999-9999)"
+            required />
+        <input type="email" name="Email" placeholder="Seu Email (nome@empresa.com.br)" required />
+        <textarea name="Negócio" placeholder="Qual seu negócio? (ex: Vendas, Serviços, etc)" required></textarea>
+        <button type="submit">Assinar Newsletter</button>
+    </form>
+
+    <div class="mascara-form"></div>
+
+    <!-- Footer Section -->
+
+    <footer class="footer" id="footer">
+        <h2>Fale com a gente</h2>
+        <div class="footer-links">
+            <a href="https://wa.me/+5548988017617" target="_blank" rel="noopener noreferrer">
+                <img src="./img/whatsapp.png" alt="Whatsapp" />
+            </a>
+            <a href="mailto:financeiro@nevrasystems.com" target="_blank" rel="noopener noreferrer">
+                <img src="./img/mail.png" alt="Email" />
+            </a>
+            <a href="https://www.instagram.com/nevra.systems/" target="_blank" rel="noopener noreferrer">
+                <img src="./img/insta.webp" alt="Instagram" />
+            </a>
+        </div>
+
+        <button class="newsletter-btn" id="newsletter-btn">Newsletter</button>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <p>© Copyright 2026 Nevra Systems. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Animation Section -->
+
+    <div class="animation-wrapper">
+        <video src="./img/anim.mp4" autoplay loop muted poster="./img/anim-fallback.png" preload="none"></video>
+        <div class="mascara-anim"></div>
+    </div>
+
+</body>
+
+<script src="./jscript.js"></script>
+
+</html>

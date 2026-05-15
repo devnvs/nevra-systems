@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Oswald Font - Local Hosting */
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/oswald-variablefont_wght.woff2') format('woff2');
+    font-weight: 200 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/oswald-light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/oswald-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/oswald-medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/oswald-bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: #000000;
+    min-height: 100vh;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.mascara-anim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.trigger-zone {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    z-index: 20;
+    background: transparent;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    transition: transform 0.25s ease;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+    z-index: 15;
+}
+
+.trigger-zone:hover+.header,
+.header:hover {
+    transform: translate(-50%, 0);
+}
+
+.nav-btn {
+    background-color: #007BFF;
+    background: linear-gradient(45deg, #7A00FF, #FF003C);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    color: #EDEDED;
+}
+
+.nav-btn:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    opacity: 0.9;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: #EDEDED;
+}
+
+h1 {
+    font-size: clamp(24px, 8vw, 48px);
+    text-align: center;
+    color: #EDEDED;
+    max-width: 90vw;
+    word-wrap: break-word;
+    line-height: 1.4;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #7A00FF, #FF003C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.sub {
+    color: #aaa;
+    max-width: 1000px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 180px;
+    font-size: clamp(14px, 4vw, 20px);
+    padding: 0 10px;
+    max-width: 90vw;
+}
+
+picture {
+    display: block;
+    width: 100%;
+    padding: 0;
+}
+
+picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.section1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 1000px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+}
+
+.section2,
+.section3,
+.section4,
+.section5 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 1000px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+}
+
+.alt1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 1000px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+}
+
+.alt2,
+.alt3,
+.alt4,
+.alt5 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 1000px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+}
+
+.cta-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    max-width: 1000px;
+    margin: 20px auto 50px;
+}
+
+.cta-link {
+    display: inline-block;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+    cursor: pointer;
+    border-radius: 120px;
+}
+
+.cta-link:hover,
+.cta-link:focus-visible {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+.cta-button {
+    display: block;
+    width: min(100%, 1200px);
+    height: auto;
+    border-radius: 120px;
+    margin: 0 auto;
+}
+
+.logo-footer {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.footer {
+    padding: 40px 20px;
+    text-align: center;
+    color: #EDEDED;
+    font-size: 20px;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.footer-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #FF003C, #7A00FF);
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.footer-links a:focus-visible {
+    outline: 2px solid #EDEDED;
+    outline-offset: 4px;
+}
+
+.footer-links a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+form {
+    background-color: #007BFF;
+    background: linear-gradient(45deg, #FF003C, #7A00FF);
+
+    position: fixed;
+    left: 50%;
+    bottom: -335px;
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 10px;
+    border-radius: 6px;
+    width: min(360px, 90vw);
+    z-index: 1;
+    transition: bottom 0.3s ease;
+}
+
+form.form-active {
+    bottom: 50%;
+    transform: translateX(-50%) translateY(50%);
+}
+
+form input {
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border-color: #7A00FF;
+    border: 1px solid #EDEDED;
+    outline-color: #7A00FF;
+}
+
+form textarea {
+    height: 80px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border-color: #EDEDED;
+    border: 1px solid #EDEDED;
+    outline-color: #7A00FF;
+}
+
+form button {
+    background-color: #007BFF;
+    background: linear-gradient(45deg, #7A00FF, #FF003C);
+    border-color: #EDEDED;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Oswald', 'Arial' sans-serif;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #EDEDED;
+}
+
+.newsletter-btn {
+    background: linear-gradient(45deg, #FF003C, #7A00FF);
+    border: none;
+    padding: 15px 32px;
+    font-size: 14px;
+    font-family: 'Oswald', 'Arial' sans-serif;
+    border-radius: 25px;
+    color: #EDEDED;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.newsletter-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.newsletter-btn:focus-visible {
+    outline: 2px solid #EDEDED;
+    outline-offset: 4px;
+}
+
+.mascara-form {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 0;
+}
+
+.mascara-form.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.footer-divider {
+    height: 1px;
+    background: #EDEDED;
+    margin: 40px auto 20px;
+    max-width: 100%;
+    margin-bottom: 35px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 15px;
+    color: #EDEDED;
+}
