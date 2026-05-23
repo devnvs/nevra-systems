@@ -1,4 +1,3 @@
-````md
 # ⚡ NEVRA SYSTEMS
 
 > Transformando presença digital em crescimento real.
