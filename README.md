@@ -1,19 +1,3 @@
-````md
-# ⚡ NEVRA SYSTEMS
-
-> Transformando presença digital em crescimento real.
-
-![Status](https://img.shields.io/badge/status-online-00ff99)
-![Frontend](https://img.shields.io/badge/frontend-HTML%20%7C%20CSS%20%7C%20JavaScript-black)
-![Responsive](https://img.shields.io/badge/design-responsive-6e44ff)
-![Deploy](https://img.shields.io/badge/deploy-GitHub%20Pages-171515)
-
-## 🌐 Live Preview
-
-🔗 https://devnvs.github.io/nevra-systems/
-
----
-
 ## 📌 Sobre o Projeto
 
 A **NEVRA SYSTEMS** é uma landing page moderna desenvolvida com foco em:
@@ -104,7 +88,7 @@ Abra o arquivo `index.html` no navegador.
 
 ## 📸 Preview
 
-> Adicione aqui futuramente uma screenshot oficial do site.
+<img width="1880" height="2360" alt="LANDING PAGE MOCKUP" src="https://github.com/user-attachments/assets/15539738-7c5b-4b18-a516-43bdc399abc4" />
 
 ---
 
